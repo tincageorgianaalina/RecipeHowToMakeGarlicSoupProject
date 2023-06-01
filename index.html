@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garlic Soup</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!--Top Section-->
+      <header>
+        <h1><b>How to make Garlic Soup</b></h1>
+        <img
+          id="img-container"
+          src="./img/garlic-soup-topped-with-croutons-bowl-wooden-table.jpg"
+          alt="Garlic Soup"
+          width="300"
+          height="300"
+        />
+        <p>
+          This garlic toast recipe is quick to make and scrumptious to eat! It
+          will complement any Italian meal. Melted mozzarella is optional but
+          delicious.
+        </p>
+      </header>
+      <!--Ingredients Section-->
+      <div class="ingredients">
+        <h2>Ingredients</h2>
+        <ul class="list-1">
+          <li><span>¾ cup garlic cloves, peeled</span></li>
+          <li><span>3 tablespoons olive oil</span></li>
+          <li><span>>2 ½ cups chicken broth</span></li>
+          <li><span>1 cup white wine</span></li>
+          <li><span>2 ½ cups milk</span></li>
+          <li><span>1 cup heavy whipping cream</span></li>
+          <li><span>½ cup peeled and cubed potatoes</span></li>
+          <li><span>salt and pepper to taste</span></li>
+        </ul>
+      </div>
+      <!--Preparation Section-->
+      <div class="preparation">
+        <h2>Preparation</h2>
+        <ol class="list-2">
+          <li>
+            <span
+              >Chop garlic in a food processor to a coarse paste, stopping
+              occasionally to scrape the sides of the bowl.</span
+            >
+          </li>
+          <li>
+            <span
+              >Heat oil in a large saucepan over low heat. Add the garlic paste
+              and cook just until the paste begins to color, stirring
+              constantly. Stir in the chicken broth and wine. Bring mixture to a
+              boil.</span
+            >
+          </li>
+          <li>
+            <span
+              >Reduce heat and simmer for 30 minutes. Stir in the milk, cream
+              and potato and simmer for another 30 minutes.</span
+            >
+          </li>
+          <li>
+            <span
+              >Puree soup in blender, return to saucepan and simmer. Add salt
+              and pepper to taste. Ladle into bowls and serve with buttered
+              French bread.</span
+            >
+          </li>
+        </ol>
+      </div>
+      <!--Table Section-->
+      <div>
+        <button onClick="toggleTable()">Show Nutrition Facts</button>
+        <table id="myTable" style="width: 80%" class="hidden">
+          <tr>
+            <th>Calories</th>
+            <th>Fat</th>
+            <th>Carbs</th>
+            <th>Protein</th>
+          </tr>
+          <tr>
+            <td>399</td>
+            <td>29</td>
+            <td>18</td>
+            <td>9</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!--Java Script-->
+    <script>
+      function toggleTable() {
+        document.getElementById("myTable").classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
